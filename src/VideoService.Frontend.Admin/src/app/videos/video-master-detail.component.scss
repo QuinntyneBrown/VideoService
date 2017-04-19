@@ -1,0 +1,20 @@
+@import "../../styles/base/_all";
+
+ce-video-master-detail {
+    display:block;
+	@extend .view-card;
+
+    ce-video-edit-embed,
+    ce-video-list-embed {
+        float:left;
+        display:inline-block;
+        position:relative;
+        width:50%;
+    }
+}
+
+ce-video-master-detail::after {
+    clear:both;
+    display:block;
+    content:" ";
+}
